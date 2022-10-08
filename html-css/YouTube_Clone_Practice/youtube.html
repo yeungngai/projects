@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube Html Practics</title>
+
+    <!-- Load fonts from fonts.google.com -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Load css from "styles" folder -->
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/video.css">  
+    <link rel="stylesheet" href="styles/sidebar.css">
+
+  </head>
+
+
+  <body>
+    <!-- 
+      If focus on content size first, use flexbox.
+      If need a grid, use grid layout.
+      Nested layout can use either flexbox or grid.
+     -->
+
+     <!-- 
+      Using flexbox
+      -->
+    <header class="header">
+      <div class="left_section">
+        <button class="hamberger_youtube_btn">
+          <img class="hamberger_youtube" src="icons/hamburger-menu.svg">
+        </button>
+        <img class="youtube_logo" src="icons/youtube-logo.svg">
+      </div>
+
+      <div class="mid_section">
+        <form class="search_form" action="">
+          <input class="search_bar" type="text" placeholder="Search" value="">
+        </form>
+
+        <button class="search_btn">
+          <img class="search_icon" src="icons/search.svg">
+          <div class="tooltip">Search</div>
+        </button>
+
+        <button class="voice_search_btn">
+          <img class="voice_search_icon" src="icons/voice-search-icon.svg">
+          <div class="tooltip">Search with your voice</div>
+        </button>
+      </div>
+
+      <div class="right_section">
+        <div class="upload_icon_container">
+          <img class="upload_icon" src="icons/upload.svg">
+          <div class="tooltip">Create</div> 
+        </div>
+        
+        <div class="youtube_apps_icon_container">
+          <img class="youtube_apps_icon" src="icons/youtube-apps.svg">
+          <div class="tooltip">YouTube apps</div> 
+        </div>
+        
+        <div class="notifications_icon_container">
+          <img class="notifications_icon" src="icons/notifications.svg">
+          <div class="notification_count">3</div>
+          <div class="tooltip">Notifications</div> 
+        </div>        
+        <img class="current_user_pic" src="channel_pic/my-channel.jpeg">
+      </div>
+    </header>
+
+    <nav class="sidebar">
+      <div class="sidebar_link_home">
+        <img src="icons/home.svg">
+        <div>Home</div>
+      </div>
+
+      <div class="sidebar_link">
+        <img src="icons/explore.svg">
+        <div>Explore</div>
+      </div>
+
+      <div class="sidebar_link">
+        <img src="icons/subscriptions.svg">
+        <div>Subscriptions</div>
+      </div>
+
+      <div class="sidebar_link">
+        <img src="icons/originals.svg">
+        <div>Originals</div>
+      </div>
+
+      <div class="sidebar_link">
+        <img src="icons/youtube-music.svg">
+        <div>YouTube Music</div>
+      </div>
+
+      <div class="sidebar_link">
+        <img src="icons/library.svg">
+        <div>Library</div>
+      </div>
+    </nav>
+
+    <!-- 
+      div is like a container.
+      div is used for nested layout, vertial mixed with horizontal.
+      Using grid layout
+    -->
+    <main>
+      <section class="video_grid">
+
+        <div class="video_preview">
+          <div>
+            <a href="https://www.youtube.com/watch?v=HB_wtbfG_Zc" target="_blank">
+              <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+            </a>
+            <div class="thumbnail_row">
+              <div class="video_time">3:22</div>
+            </div>
+            
+          </div>
+    
+          <div class="video_info_grid">
+            <div class="channel_pic">
+              <a href="https://www.youtube.com/c/phaseone" target="_blank">
+                <img class="profile_pic" src="channel_pic/channel-1.jpeg">
+              </a>              
+            </div>
+  
+            <div class="video_info">
+              <p class="video_title">
+                <a href="https://www.youtube.com/watch?v=HB_wtbfG_Zc" target="_blank" class="video_link">
+                  Lynggaard Jewellery and Georg Jensen Product Shoot | Phase One</a>
+              </p>
+              <p class="video_author">
+                <a href="https://www.youtube.com/c/phaseone" target="_blank" class="author_link">
+                  Phase One</a>
+              </p>
+              <p class="video_stats">
+                41k views &#183; 4 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video_preview">
+          <div>
+            <a href="https://www.youtube.com/watch?v=zopREUJCXTM&t=624s" target="_blank">
+              <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+            </a>
+            <div class="thumbnail_row">
+              <div class="video_time">29:41</div>
+            </div>
+            
+          </div>
+    
+          <div class="video_info_grid">
+            <div class="channel_pic">
+              <a href="https://www.youtube.com/user/koteniseo" target="_blank">
+                <img class="profile_pic" src="channel_pic/channel-2.jpeg">
+              </a>              
+            </div>
+  
+            <div class="video_info">
+              <p class="video_title">
+                <a href="https://www.youtube.com/watch?v=zopREUJCXTM&t=624s" target="_blank" class="video_link">
+                  Hasselblad X1D or 907X ----- Lens mount adapter                </a>
+              </p>
+              <p class="video_author">
+                <a href="https://www.youtube.com/user/koteniseo" target="_blank" class="author_link">
+                  無境 / 서정희
+                </a>
+              </p>
+              <p class="video_stats">
+                4.9K views &#183 1 year ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video_preview">
+          <div>
+            <a href="https://www.youtube.com/watch?v=vFyRUE5bxFM" target="_blank">
+              <img class="thumbnail" src="thumbnails/thumbnail-3.webp">
+            </a>
+            <div class="thumbnail_row">
+              <div class="video_time">3:07</div>
+            </div>
+            
+          </div>
+    
+          <div class="video_info_grid">
+            <div class="channel_pic">
+              <a href="https://www.youtube.com/channel/UCiwEfSE_UgHrYLDQ7MHwBuA" target="_blank">
+                <img class="profile_pic" src="channel_pic/channel-3.jpeg">
+              </a>              
+            </div>
+  
+            <div class="video_info">
+              <p class="video_title">
+                <a href="https://www.youtube.com/watch?v=vFyRUE5bxFM" target="_blank" class="video_link">
+                  Ilford HP5 film Landscape photography.
+                </a>
+              </p>
+              <p class="video_author">
+                <a href="https://www.youtube.com/channel/UCiwEfSE_UgHrYLDQ7MHwBuA" target="_blank" class="author_link">
+                  Tom Whelan
+                </a>
+              </p>
+              <p class="video_stats">
+                6K views &#183 7 months ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video_preview">
+          <div>
+            <a href="https://www.youtube.com/watch?v=J2DxGXp8KYY" target="_blank">
+              <img class="thumbnail" src="thumbnails/thumbnail-4.webp">
+            </a>
+            <div class="thumbnail_row">
+              <div class="video_time">29:41</div>
+            </div>
+            
+          </div>
+    
+          <div class="video_info_grid">
+            <div class="channel_pic">
+              <a href="https://www.youtube.com/c/mylittleairport/featured" target="_blank">
+                <img class="profile_pic" src="channel_pic/channel-4.jpeg">
+              </a>              
+            </div>
+  
+            <div class="video_info">
+              <p class="video_title">
+                <a href="https://www.youtube.com/watch?v=J2DxGXp8KYY" target="_blank" class="video_link">
+                  my little airport - 詩歌舞街 (demo)                </a>
+              </p>
+              <p class="video_author">
+                <a href="https://www.youtube.com/c/mylittleairport/featured" target="_blank" class="author_link">
+                  my little airport
+                </a>
+              </p>
+              <p class="video_stats">
+                816K views &#183 3 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video_preview">
+          <div>
+            <a href="https://www.youtube.com/watch?v=M7KpoHoF6Y4&t=40s" target="_blank">
+              <img class="thumbnail" src="thumbnails/thumbnail-5.webp">
+            </a>
+            <div class="thumbnail_row">
+              <div class="video_time">17:50</div>
+            </div>
+            
+          </div>
+    
+          <div class="video_info_grid">
+            <div class="channel_pic">
+              <a href="https://www.youtube.com/c/TheNakedPhotographer" target="_blank">
+                <img class="profile_pic" src="channel_pic/channel-5.jpeg">
+              </a>              
+            </div>
+  
+            <div class="video_info">
+              <p class="video_title">
+                <a href="https://www.youtube.com/watch?v=M7KpoHoF6Y4&t=40s" target="_blank" class="video_link">
+                  Are Light Meter Apps Any Good?                </a>
+              </p>
+              <p class="video_author">
+                <a href="https://www.youtube.com/c/TheNakedPhotographer" target="_blank" class="author_link">
+                  The Naked Photographer
+                </a>
+              </p>
+              <p class="video_stats">
+                42K views &#183 1 year ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video_preview">
+          <div>
+            <a href="https://www.youtube.com/watch?v=tC4uPEtyAns" target="_blank">
+              <img class="thumbnail" src="thumbnails/thumbnail-6.webp">
+            </a>
+            <div class="thumbnail_row">
+              <div class="video_time">29:41</div>
+            </div>
+            
+          </div>
+    
+          <div class="video_info_grid">
+            <div class="channel_pic">
+              <a href="https://www.youtube.com/c/MikeGrayFilm" target="_blank">
+                <img class="profile_pic" src="channel_pic/channel-6.jpeg">
+              </a>              
+            </div>
+  
+            <div class="video_info">
+              <p class="video_title">
+                <a href="https://www.youtube.com/watch?v=tC4uPEtyAns" target="_blank" class="video_link">
+                  Portra 800 in Harsh Sunlight w/ the Pentax 67                </a>
+              </p>
+              <p class="video_author">
+                <a href="https://www.youtube.com/c/MikeGrayFilm" target="_blank" class="author_link">
+                  Mike Gray
+                </a>
+              </p>
+              <p class="video_stats">
+                1.1K views &#183 4 hours ago
+              </p>
+            </div>
+          </div>
+        </div>
+    
+
+    
+  
+      </section>
+      
+    </main>
+
+    <script src="main.js"></script>
+
+  </body>
+</html>

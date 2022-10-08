@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Contact</title>
+
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+
+  </head>
+
+
+  <body>
+   <!-- nav -->
+   <nav class="navbar">
+    <div class="nav-center">
+      <!-- header -->
+      <div class="nav-header">
+        <a href="index.html" class="nav-logo">
+          <img src="./assets/logo.svg" alt="simply recipes">
+        </a>
+        <button class="btn nav-btn">
+          <i class="fas fa-align-justify"></i>
+        </button>
+      </div>
+
+      <!-- nav links -->
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">home</a>
+        <a href="about.html" class="nav-link">about</a>
+        <a href="tags.html" class="nav-link">tags</a>
+        <a href="recipes.html" class="nav-link">recipes</a>
+        <div class="nav-link contact-link">
+          <a href="contact.html" class="btn">contact</a>
+        </div>
+
+      </div>
+    </div>
+   </nav>
+   <!-- end of nav -->
+
+   <!-- main -->
+   <main class="page">
+    <section class="contact-container">
+      <article class="contact-info">
+        <h3>want to get in touch?</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quisquam fugiat maxime nemo repellendus. Et fugit reprehenderit harum error quasi.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, impedit.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At velit maxime magnam facere corporis, tempora id repudiandae laboriosam, debitis dolores perferendis quibusdam saepe veritatis soluta commodi eum expedita tenetur laudantium.</p>
+      </article>
+
+      <article>
+        <form action="#" class="form contact-form">
+          <!-- single form row -->
+          <div class="form-row">
+            <label for="name" class="form-label">your name</label>
+            <input type="text" name="name" id="name" class="form-input"/>
+          </div>
+          <!-- end of single form row -->
+          
+          <!-- single form row -->
+          <div class="form-row">
+            <label for="email" class="form-label">your email</label>
+            <input type="text" name="email" id="email" class="form-input"/>
+          </div>
+          <!-- end of single form row -->
+
+          <!-- single form row -->
+          <div class="form-row">
+            <label for="message" class="form-label">message</label>
+            <textarea name="message" id="message" class="form-textarea"></textarea>
+          </div>
+          <!-- end of single form row -->
+
+          <button type="submit" class="btn btn-block">submit</button>
+        </form>
+        
+      </article>
+    </section>
+
+
+    <!-- featured recipes -->
+    <section class="featured-recipes">
+      <!-- recipes list -->
+      <div class="recipes-list">
+        <!-- single recipe -->
+        <a href="single-recipe.html" class="recipe">
+          <img src="./assets/recipes/recipe-1.jpeg" alt="food" class="img recipe-img"/>
+          <h5>carne asada</h5>
+          <p>Prep: 15min | Cook: 5min</p>
+        </a>
+        <!-- end of single recipe -->
+
+        <!-- single recipe -->
+        <a href="single-recipe.html" class="recipe">
+          <img src="./assets/recipes/recipe-2.jpeg" alt="food" class="img recipe-img"/>
+          <h5>greek ribs</h5>
+          <p>Prep: 15min | Cook: 5min</p>
+        </a>
+        <!-- end of single recipe -->
+
+        <!-- single recipe -->
+        <a href="single-recipe.html" class="recipe">
+          <img src="./assets/recipes/recipe-3.jpeg" alt="food" class="img recipe-img"/>
+          <h5>vegetable soup</h5>
+          <p>Prep: 15min | Cook: 5min</p>
+        </a>
+        <!-- end of single recipe -->      
+      </div>
+      <!-- end of recipes list -->
+    </section>
+    <!-- end of featured recipes -->
+
+   </main>
+  <!-- end of main -->
+   
+
+  <!-- footer -->
+  <footer class="page-footer">
+    <p>
+      &copy; <span id="date"></span>
+      <span class="footer-logo">FooterLogo</span>
+      Built by <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Someone</a>
+    </p>
+  </footer>
+  <!-- end of footer -->
+
+   <script src="./js/app.js"></script>
+  </body>
+</html>

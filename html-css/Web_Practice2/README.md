@@ -1,8 +1,13 @@
 # Description:
 
-This is a mock reciple web practice that has multiple pages
+This is a 7-page mock reciple website design
 
-The purpose is to getting more familiar with the syntax of HTML/CSS and JavaScript whilst practicing coding the navigation of multiple web pages.
+The purpose is to getting more familiar with the syntax of HTML/CSS and the usage of JavaScript
+
+### Functions:
+* Navigation to the certain recipe page when click on the recipe
+* Navigation between different pages.
+* Adaptive layout to window size
 
 ## Preview:
 

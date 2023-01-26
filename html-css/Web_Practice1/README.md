@@ -2,7 +2,7 @@
 
 This is a responsive web practice
 
-The purpose is trying to create a mock marking web that has animations and adptive to different window size
+The purpose is to create a mock marking web that has animations and adaptive to different window size
 
 ## Preview:
 
